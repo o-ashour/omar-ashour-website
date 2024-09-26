@@ -27,10 +27,10 @@ export default function Home() {
         </div>
       </div>
         
-      <div className="bg-grey-200 mt-16 px-3 md:relative xl:mt-24">
-        <div className="max-w-6xl xl:mx-auto">
+      <div className="bg-grey-200 mt-16 px-3 xl:mt-24">
+        <div className="max-w-6xl xl:mx-auto relative">
           <CTA />
-          <Image className='hidden md:block absolute left-0 bottom-44 -left-96 xl:bottom-60 xl:-left-80' src={ringsPattern} alt='rings pattern' />
+          <Image className='absolute -left-52 bottom-72 md:bottom-32 md:-left-96 xl:bottom-60' src={ringsPattern} alt='rings pattern' />
           <hr className="mt-20 md:mx-4 lg:mx-0" />
           <Footer />
         </div>        

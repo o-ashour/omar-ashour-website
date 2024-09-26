@@ -8,16 +8,24 @@ export default function NavMenuSmall() {
     <nav className="md:hidden">
       <ul className="flex space-x-7">
         <li>
-          <GitHubSmallIcon />
+          <button id='nav-btn'>
+            <GitHubSmallIcon />
+          </button>
         </li>
         <li>
-          <FrontendMentorSmallIcon />
+          <button id='nav-btn'>
+            <FrontendMentorSmallIcon />
+          </button>
         </li>
         <li>
-          <LinkedInSmallIcon />
+          <button id='nav-btn'>
+            <LinkedInSmallIcon />
+          </button>
         </li>
         <li>
-          <TwitterSmallIcon />
+          <button id='nav-btn'>
+            <TwitterSmallIcon />
+          </button>
         </li>
       </ul>
     </nav>

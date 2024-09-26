@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#nav-btn:hover svg path:first-of-type {
+  fill: #4EE1A0;
+}

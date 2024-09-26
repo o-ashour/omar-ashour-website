@@ -12,7 +12,7 @@ export default function Hero() {
         Based in the UK, I&apos;m a front-end developer passionate about
         building accessible web apps that users love.
       </p>
-      <button className="mt-7 font-bold tracking-widest border-b-2 border-green pb-2 xl:mt-20">
+      <button className="mt-7 font-bold tracking-widest border-b-2 border-green pb-2 xl:mt-20 hover:text-green">
         CONTACT ME
       </button>
       <hr className="mt-16 md:hidden" />

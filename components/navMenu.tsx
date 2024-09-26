@@ -8,16 +8,24 @@ export default function NavMenu() {
     <nav className="hidden md:block xl:pr-6 ">
       <ul className="flex space-x-8 items-center">
         <li>
-          <GitHubIcon />
+          <button id="nav-btn">
+            <GitHubIcon />
+          </button>
         </li>
         <li>
-          <FrontendMentorIcon />
+          <button id="nav-btn">
+            <FrontendMentorIcon />
+          </button>
         </li>
         <li>
-          <LinkedInIcon />
+          <button id="nav-btn">
+            <LinkedInIcon />
+          </button>
         </li>
         <li>
-          <TwitterIcon />
+          <button id="nav-btn">
+            <TwitterIcon />
+          </button>
         </li>
       </ul>
     </nav>

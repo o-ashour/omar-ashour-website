@@ -9,7 +9,7 @@ export default function Showcase() {
           Projects
         </h2>
         <div className="">
-          <button className="font-bold tracking-widest border-b-2 border-green pb-1 md:mt-6">
+          <button className="font-bold tracking-widest border-b-2 border-green pb-1 md:mt-6 hover:text-green">
             CONTACT ME
           </button>
         </div>
