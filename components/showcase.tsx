@@ -8,10 +8,12 @@ export default function Showcase() {
         <h2 className="text-4xl md:text-7xl font-bold">
           Projects
         </h2>
-        <div className="">
-          <button className="font-bold tracking-widest border-b-2 border-green pb-1 md:mt-6 hover:text-green">
-            CONTACT ME
-          </button>
+        <div>
+          <a href='#contact-section'>
+            <button className="font-bold tracking-widest border-b-2 border-green pb-1 md:mt-6 hover:text-green">
+              CONTACT ME
+            </button>
+          </a>
         </div>
       </div>
       <ul className="space-y-6 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-5 md:gap-y-16 xl:hidden">

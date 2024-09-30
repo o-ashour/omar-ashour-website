@@ -12,9 +12,12 @@ export default function Hero() {
         Based in the UK, I&apos;m a front-end developer passionate about
         building accessible web apps that users love.
       </p>
-      <button className="mt-7 font-bold tracking-widest border-b-2 border-green pb-2 xl:mt-20 hover:text-green">
-        CONTACT ME
-      </button>
+      <a href='#contact-section'>
+        <button className="mt-7 font-bold tracking-widest border-b-2 border-green pb-2 xl:mt-20 hover:text-green">
+          CONTACT ME
+        </button>
+      </a>
+
       <hr className="mt-16 md:hidden" />
       <div id='spacer' className="hidden md:block h-16 lg:h-44"></div>
     </section>
