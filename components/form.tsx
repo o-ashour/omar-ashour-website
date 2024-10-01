@@ -13,6 +13,8 @@ const initialState = {
 export default function Form() {
   const [state, formAction] = useFormState(saveForm, initialState);
 
+  console.log(state.msg)
+
   return (
     <form action={formAction} className="flex flex-col mt-12 xl:flex-1 xl:mt-0">
       <div className="flex flex-col items-end mb-7 space-y-1 relative">

@@ -1,6 +1,9 @@
 'use server'
 
 import { z } from 'zod';
+import Airtable, { Error } from "airtable";
+
+const base = new Airtable({ apiKey: process.env.AIRTABLE_ACCESS_TOKEN }).base('appxUoVfshIweTdcA');
 
 type FormState = {
   errors?: {
@@ -10,6 +13,31 @@ type FormState = {
   };
   msg?: string;
 };
+
+const saveToAirtable = async (formValues: {
+  name: string;
+  email: string;
+  message: string;
+}) => {
+  const { name, email, message } = formValues;
+
+  return new Promise((resolve, reject) => {
+    base('Table 1').create([
+      {
+        "fields": {
+          "Name": name,
+          "Email": email,
+          "Message": message,
+        }
+      }
+    ], function (err: Error) {
+      if (err) {
+        reject(err)
+      }
+      resolve('New contact successfully saved');
+    });
+  })
+}
 
 export const saveForm = async (prevState: FormState, formData: FormData) => {
   const rawFormData = {
@@ -32,12 +60,12 @@ export const saveForm = async (prevState: FormState, formData: FormData) => {
       msg: 'Failed to validate inputs'
     }
   }
-
-  // if successful, then return ??
-  // save to airtable first
-  // make a post request with data in body
-  // if request fails, return error message (network error)
-  // if request succeeds, return success message
-
-  return { msg: 'inputs successfully validated'};
+    
+  try {
+    await saveToAirtable(validatedFields.data);
+    return { msg: 'Saved to airtable successfully' };
+  } catch (error) {
+    console.error(error);
+    return { msg: 'Something went wrong'}
+  }
 }

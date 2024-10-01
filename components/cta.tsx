@@ -1,5 +1,12 @@
 import Form from "./form";
 
+// // var Airtable = require('airtable');
+// import Airtable from "airtable";
+
+// const base = new Airtable({ apiKey: process.env.AIRTABLE_ACCESS_TOKEN }).base('appxUoVfshIweTdcA');
+
+
+
 export default function CTA() {
   return (
     <section id='contact-section' className="pt-12 relative md:max-w-md md:mx-auto xl:flex xl:max-w-full xl:gap-x-64 xl:pt-20 z-50">
