@@ -9,6 +9,7 @@ import Experience from '@/components/experience';
 import Showcase from '@/components/showcase';
 import CTA from '@/components/cta';
 import Footer from '@/components/footer';
+import { ToastContainer } from 'react-toastify';
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
           <Footer />
         </div>        
       </div>
+      <ToastContainer />
     </div>
   );
 }

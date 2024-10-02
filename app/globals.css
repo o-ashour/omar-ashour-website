@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('react-toastify/dist/ReactToastify.min.css');
+
 #nav-btn:hover svg path:first-of-type {
   fill: #4EE1A0;
+}
+
+/* Disable autofill highlighting */
+#contact-form input:-webkit-autofill {
+  -webkit-text-fill-color: #FFFFFF !important;
+  -webkit-box-shadow: 0 0 0 2rem #242424 inset !important;
+  caret-color: #FFFFFF;
 }

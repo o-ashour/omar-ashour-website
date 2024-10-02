@@ -3,7 +3,7 @@
 import { z } from 'zod';
 import Airtable, { Error } from "airtable";
 
-const base = new Airtable({ apiKey: process.env.AIRTABLE_ACCESS_TOKEN }).base('appxUoVfshIweTdcA');
+const base = new Airtable({ apiKey: process.env.AIRTABLE_ACCESS_TOKEN }).base(process.env.AIRTABLE_BASE_ID || '');
 
 type FormState = {
   errors?: {
@@ -12,6 +12,7 @@ type FormState = {
     message?: string[];
   };
   msg?: string;
+  status?: string;
 };
 
 const saveToAirtable = async (formValues: {
@@ -57,15 +58,16 @@ export const saveForm = async (prevState: FormState, formData: FormData) => {
   if (!validatedFields.success) {
     return {
       errors: validatedFields.error.flatten().fieldErrors,
-      msg: 'Failed to validate inputs'
+      msg: 'Invalid entries',
+      status: 'error',
     }
   }
     
   try {
     await saveToAirtable(validatedFields.data);
-    return { msg: 'Saved to airtable successfully' };
+    return { msg: 'Request submitted successfully', status: 'success' };
   } catch (error) {
     console.error(error);
-    return { msg: 'Something went wrong'}
+    return { msg: 'Something went wrong', status: 'error'}
   }
 }
