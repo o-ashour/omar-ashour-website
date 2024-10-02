@@ -6,6 +6,7 @@ import { saveForm } from "@/app/actions";
 import { useFormState, useFormStatus } from "react-dom";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
+import LoadingSpinnerIcon from "./icons/loadingSpinnerIcon";
 
 const initialState = {
   msg: '',
@@ -28,10 +29,7 @@ function Loader() {
 
   return (
     <button className={`fixed top-0 -right-40 inline-flex items-center mt-4 mr-2.5 px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-grey-200 bg-white hover:white ${pending && '-translate-x-40'} transition ease-in-out duration-150 cursor-not-allowed`}>
-      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-grey-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-      </svg>
+      <LoadingSpinnerIcon />
       Processing...
     </button>
   )
@@ -47,8 +45,6 @@ export default function Form() {
       toast(state.msg)
     }
   }, [state.status, state.msg])
-
-
 
   return (
     <form action={formAction} className="flex flex-col mt-12 xl:flex-1 xl:mt-0" id='contact-form'>

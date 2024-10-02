@@ -11,6 +11,14 @@ import memoryGameThumbnailSmall from '../../public/assets/images/thumbnail-proje
 import memoryGameThumbnailLarge from '../../public/assets/images/thumbnail-project-5-large.webp';
 import artGalleryShowcaseThumbnailSmall from '../../public/assets/images/thumbnail-project-6-small.webp';
 import artGalleryShowcaseThumbnailLarge from '../../public/assets/images/thumbnail-project-6-large.webp';
+import TwitterSmallIcon from "@/components/icons/twitterSmallIcon";
+import TwitterIcon from "@/components/icons/twitterIcon";
+import GitHubSmallIcon from "@/components/icons/gitHubSmallIcon";
+import GitHubIcon from "@/components/icons/gitHubIcon";
+import FrontendMentorSmallIcon from "@/components/icons/frontendMentorSmallIcon";
+import FrontendMentorIcon from "@/components/icons/frontendMentorIcon";
+import LinkedInSmallIcon from "@/components/icons/linkedInSmallIcon";
+import LinkedInIcon from "@/components/icons/linkedInIcon";
 
 type Skills = {
   id: number,
@@ -25,8 +33,22 @@ type Projects = {
   images: {
     small: StaticImageData,
     large: StaticImageData,
-  }
+  },
+  urls?: {
+    repo?: string,
+    productionSite?: string,
+  },
 }[]
+
+type NavItems = {
+  id: number,
+  name: string,
+  url: string,
+  icons: {
+    small: JSX.Element,
+    large: JSX.Element
+  }
+}
 
 export const Skills: Skills = [
   { id: 0, name: 'HTML', experienceInYears: 4 },
@@ -45,6 +67,10 @@ export const Projects: Projects = [
     images: {
       small: designPortfolioThumbnailSmall,
       large: designPortfolioThumbnailLarge,
+    },
+    urls: {
+      repo: 'https://github.com/o-ashour/single-page-developer-portfolio', // to test
+      productionSite: 'https://web.archive.org',
     }
   },
   { 
@@ -91,5 +117,44 @@ export const Projects: Projects = [
       small: artGalleryShowcaseThumbnailSmall,
       large: artGalleryShowcaseThumbnailLarge,
     }
-  }
+  },
 ] 
+
+export const NavItems = [
+  {
+    idx: 0,
+    name: 'GitHub',
+    url: 'https://x.com/weirdlilguys',
+    icons: {
+      small: <GitHubSmallIcon />,
+      large: <GitHubIcon />
+    }
+  },
+  {
+    idx: 1,
+    name: 'Frontend Mentor',
+    url: 'https://x.com/weirdlilguys',
+    icons: {
+      small: <FrontendMentorSmallIcon />,
+      large: <FrontendMentorIcon />
+    }
+  },
+  {
+    idx: 2,
+    name: 'LinkedIn',
+    url: 'https://x.com/weirdlilguys',
+    icons: {
+      small: <LinkedInSmallIcon />,
+      large: <LinkedInIcon />
+    }
+  },
+  {
+    idx: 3,
+    name: 'Twitter',
+    url: 'https://x.com/weirdlilguys',
+    icons: {
+      small: <TwitterSmallIcon />,
+      large: <TwitterIcon />
+    }
+  },
+]
