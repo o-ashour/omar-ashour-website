@@ -13,12 +13,12 @@ import artGalleryShowcaseThumbnailSmall from '../../public/assets/images/thumbna
 import artGalleryShowcaseThumbnailLarge from '../../public/assets/images/thumbnail-project-6-large.webp';
 import TwitterSmallIcon from "@/components/icons/twitterSmallIcon";
 import TwitterIcon from "@/components/icons/twitterIcon";
-import GitHubSmallIcon from "@/components/icons/gitHubSmallIcon";
 import GitHubIcon from "@/components/icons/gitHubIcon";
 import FrontendMentorSmallIcon from "@/components/icons/frontendMentorSmallIcon";
 import FrontendMentorIcon from "@/components/icons/frontendMentorIcon";
 import LinkedInSmallIcon from "@/components/icons/linkedInSmallIcon";
 import LinkedInIcon from "@/components/icons/linkedInIcon";
+import GitHubSmallIcon from "@/components/icons/gitHubSmallIcon";
 
 type Skills = {
   id: number,
