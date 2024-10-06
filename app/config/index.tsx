@@ -1,16 +1,28 @@
 import { StaticImageData } from "next/image"
-import designPortfolioThumbnailSmall from '../../public/assets/images/thumbnail-project-1-small.webp';
-import designPortfolioThumbnailLarge from '../../public/assets/images/thumbnail-project-1-large.webp';
-import eLearningLandingThumbnailSmall from '../../public/assets/images/thumbnail-project-2-small.webp';
-import eLearningLandingThumbnailLarge from '../../public/assets/images/thumbnail-project-2-large.webp';
-import todoAppThumbnailSmall from '../../public/assets/images/thumbnail-project-3-small.webp';
-import todoAppThumbnailLarge from '../../public/assets/images/thumbnail-project-3-large.webp';
-import entertainmentWebAppThumbnailSmall from '../../public/assets/images/thumbnail-project-4-small.webp';
-import entertainmentWebAppThumbnailLarge from '../../public/assets/images/thumbnail-project-4-large.webp';
-import memoryGameThumbnailSmall from '../../public/assets/images/thumbnail-project-5-small.webp';
-import memoryGameThumbnailLarge from '../../public/assets/images/thumbnail-project-5-large.webp';
-import artGalleryShowcaseThumbnailSmall from '../../public/assets/images/thumbnail-project-6-small.webp';
-import artGalleryShowcaseThumbnailLarge from '../../public/assets/images/thumbnail-project-6-large.webp';
+// import designPortfolioThumbnailSmall from '../../public/assets/images/thumbnail-project-1-small.webp';
+// import designPortfolioThumbnailLarge from '../../public/assets/images/thumbnail-project-1-large.webp';
+// import eLearningLandingThumbnailSmall from '../../public/assets/images/thumbnail-project-2-small.webp';
+// import eLearningLandingThumbnailLarge from '../../public/assets/images/thumbnail-project-2-large.webp';
+// import todoAppThumbnailSmall from '../../public/assets/images/thumbnail-project-3-small.webp';
+// import todoAppThumbnailLarge from '../../public/assets/images/thumbnail-project-3-large.webp';
+// import entertainmentWebAppThumbnailSmall from '../../public/assets/images/thumbnail-project-4-small.webp';
+// import entertainmentWebAppThumbnailLarge from '../../public/assets/images/thumbnail-project-4-large.webp';
+// import memoryGameThumbnailSmall from '../../public/assets/images/thumbnail-project-5-small.webp';
+// import memoryGameThumbnailLarge from '../../public/assets/images/thumbnail-project-5-large.webp';
+// import artGalleryShowcaseThumbnailSmall from '../../public/assets/images/thumbnail-project-6-small.webp';
+// import artGalleryShowcaseThumbnailLarge from '../../public/assets/images/thumbnail-project-6-large.webp';
+import microPaymentsBlogThumbnailSmall from '../../public/assets/images/thumbnail-ttj-small.png';
+import microPaymentsBlogThumbnailLarge from '../../public/assets/images/thumbnail-ttj-large.png';
+import linksharingAppThumbnailSmall from '../../public/assets/images/thumbnail-link-sharing-app-small.jpg';
+import linksharingAppThumbnailLarge from '../../public/assets/images/thumbnail-link-sharing-app-large.jpg';
+import catWikiThumbnailSmall from '../../public/assets/images/thumbnail-catwiki-small.png';
+import catWikiThumbnailLarge from '../../public/assets/images/thumbnail-catwiki-large.png';
+import socialAppThumbnailSmall from '../../public/assets/images/thumbnail-social-app-small.png';
+import socialAppThumbnailLarge from '../../public/assets/images/thumbnail-social-app-large.png';
+import personalBlogThumbnailSmall from '../../public/assets/images/thumbnail-personal-blog-page-small.png';
+import personalBlogThumbnailLarge from '../../public/assets/images/thumbnail-personal-blog-page-large.png';
+import marketingSiteThumbnailSmall from '../../public/assets/images/thumbnail-marketing-site-small.png';
+import marketingSiteThumbnailLarge from '../../public/assets/images/thumbnail-marketing-site-large.png';
 import TwitterSmallIcon from "@/components/icons/twitterSmallIcon";
 import TwitterIcon from "@/components/icons/twitterIcon";
 // import GitHubIcon from "@/components/icons/gitHubIcon";
@@ -51,71 +63,90 @@ type NavItems = {
 }
 
 export const Skills: Skills = [
-  { id: 0, name: 'HTML', experienceInYears: 4 },
-  { id: 1, name: 'CSS', experienceInYears: 4 },
-  { id: 2, name: 'Javascript', experienceInYears: 4 },
-  { id: 3, name: 'Accessibility', experienceInYears: 4 },
-  { id: 4, name: 'React', experienceInYears: 3 },
-  { id: 5, name: 'Sass', experienceInYears: 3 },
+  { id: 0, name: 'HTML', experienceInYears: 3 },
+  { id: 1, name: 'CSS', experienceInYears: 3 },
+  { id: 2, name: 'Javascript', experienceInYears: 2 },
+  { id: 3, name: 'TailwindCSS', experienceInYears: 2 },
+  { id: 4, name: 'ChakraUI', experienceInYears: 2 },
+  { id: 5, name: 'React', experienceInYears: 2 },
+  { id: 6, name: 'Next', experienceInYears: 2 },
+  { id: 7, name: 'Firebase', experienceInYears: 2 },
 ]
 
 export const Projects: Projects = [
   { 
     id: 0,
-    title: 'Design Portfolio',
-    skills: ['html', 'css'],
+    title: 'Micropayments Web App',
+    skills: ['next', 'chakraUI', 'firebase'],
     images: {
-      small: designPortfolioThumbnailSmall,
-      large: designPortfolioThumbnailLarge,
+      small: microPaymentsBlogThumbnailSmall,
+      large: microPaymentsBlogThumbnailLarge,
     },
     urls: {
-      repo: 'https://github.com/o-ashour/single-page-developer-portfolio', // to test
-      productionSite: 'https://web.archive.org',
+      productionSite: 'https://www.tiptopjar.com',
     }
   },
   { 
     id: 1,
-    title: 'E-Learning Landing Page',
-    skills: ['html', 'css'],
+    title: 'Link Sharing App',
+    skills: ['next', 'tailwind', 'postgreSQL'],
     images: {
-      small: eLearningLandingThumbnailSmall,
-      large: eLearningLandingThumbnailLarge,
+      small: linksharingAppThumbnailSmall,
+      large: linksharingAppThumbnailLarge,
+    },
+    urls: {
+      repo: 'https://github.com/o-ashour/link-sharing-app',
+      productionSite: 'https://link-sharing-app-eight-black.vercel.app/',
     }
   },
   { 
     id: 2,
-    title: 'Todo Web App',
-    skills: ['html', 'css', 'javascript'],
+    title: 'Cat Wiki',
+    skills: ['react', 'express', 'mongodb', 'nodejs'],
     images: {
-      small: todoAppThumbnailSmall,
-      large: todoAppThumbnailLarge,
+      small: catWikiThumbnailSmall,
+      large: catWikiThumbnailLarge,
+    },
+    urls: {
+      repo: 'https://github.com/o-ashour/cat-wiki',
+      productionSite: 'https://cat-wiki-yqvb.onrender.com/',
     }
   },
   { 
     id: 3,
-    title: 'Entertainment Web App',
-    skills: ['html', 'css', 'javascript'],
+    title: 'Social Networking App (Hackathon Entry)',
+    skills: ['next', 'tailwind', 'firebase'],
     images: {
-      small: entertainmentWebAppThumbnailSmall,
-      large: entertainmentWebAppThumbnailLarge,
+      small: socialAppThumbnailSmall,
+      large: socialAppThumbnailLarge,
+    },
+    urls: {
+      repo: 'https://github.com/o-ashour/migrant-mingle',
+      productionSite: 'https://migrant-mingle.vercel.app/',
     }
   },
   { 
     id: 4,
-    title: 'Memory Game',
-    skills: ['html', 'css', 'javascript'],
+    title: 'Personal Blog Page',
+    skills: ['html', 'php', 'wordpress'],
     images: {
-      small: memoryGameThumbnailSmall,
-      large: memoryGameThumbnailLarge,
+      small: personalBlogThumbnailSmall,
+      large: personalBlogThumbnailLarge,
+    },
+    urls: {
+      productionSite: 'https://www.ashrafashour.com/',
     }
   },
   { 
     id: 5,
-    title: 'Art Gallery Showcase',
+    title: 'Marketing Site for Reforestation API',
     skills: ['html', 'css', 'javascript'],
     images: {
-      small: artGalleryShowcaseThumbnailSmall,
-      large: artGalleryShowcaseThumbnailLarge,
+      small: marketingSiteThumbnailSmall,
+      large: marketingSiteThumbnailLarge,
+    },
+    urls: {
+      productionSite: 'https://www.digitalhumani.com/',
     }
   },
 ] 
