@@ -23,14 +23,16 @@ import personalBlogThumbnailSmall from '../../public/assets/images/thumbnail-per
 import personalBlogThumbnailLarge from '../../public/assets/images/thumbnail-personal-blog-page-large.png';
 import marketingSiteThumbnailSmall from '../../public/assets/images/thumbnail-marketing-site-small.png';
 import marketingSiteThumbnailLarge from '../../public/assets/images/thumbnail-marketing-site-large.png';
-import TwitterSmallIcon from "@/components/icons/twitterSmallIcon";
-import TwitterIcon from "@/components/icons/twitterIcon";
-// import GitHubIcon from "@/components/icons/gitHubIcon";
-import FrontendMentorSmallIcon from "@/components/icons/frontendMentorSmallIcon";
-import FrontendMentorIcon from "@/components/icons/frontendMentorIcon";
+// import TwitterSmallIcon from "@/components/icons/twitterSmallIcon";
+// import TwitterIcon from "@/components/icons/twitterIcon";
+// import FrontendMentorSmallIcon from "@/components/icons/frontendMentorSmallIcon";
+// import FrontendMentorIcon from "@/components/icons/frontendMentorIcon";
 import LinkedInSmallIcon from "@/components/icons/linkedInSmallIcon";
 import LinkedInIcon from "@/components/icons/linkedInIcon";
-// import GitHubSmallIcon from "@/components/icons/gitHubSmallIcon";
+import GitHubSmallIcon from "@/components/icons/gitHubSmallIcon";
+import GitHubIcon from "@/components/icons/gitHubIcon";
+import DevpostSmallIcon from "@/components/icons/devpostSmallIcon";
+import DevpostIcon from "@/components/icons/devpostIcon";
 
 type Skills = {
   id: number,
@@ -157,40 +159,31 @@ export const Projects: Projects = [
 ] 
 
 export const NavItems = [
-  // {
-  //   idx: 0,
-  //   name: 'GitHub',
-  //   url: 'https://x.com/weirdlilguys',
-  //   icons: {
-  //     small: <GitHubSmallIcon />,
-  //     large: <GitHubIcon />
-  //   }
-  // },
   {
-    idx: 1,
-    name: 'Frontend Mentor',
-    url: 'https://x.com/weirdlilguys',
+    idx: 0,
+    name: 'GitHub',
+    url: 'https://github.com/o-ashour',
     icons: {
-      small: <FrontendMentorSmallIcon />,
-      large: <FrontendMentorIcon />
+      small: <GitHubSmallIcon />,
+      large: <GitHubIcon />
     }
   },
   {
-    idx: 2,
+    idx: 1,
     name: 'LinkedIn',
-    url: 'https://x.com/weirdlilguys',
+    url: 'https://www.linkedin.com/in/omar-ash',
     icons: {
       small: <LinkedInSmallIcon />,
       large: <LinkedInIcon />
     }
   },
   {
-    idx: 3,
-    name: 'Twitter',
-    url: 'https://x.com/weirdlilguys',
+    idx: 2,
+    name: 'DevPost',
+    url: 'https://devpost.com/shoegaze-86',
     icons: {
-      small: <TwitterSmallIcon />,
-      large: <TwitterIcon />
+      small: <DevpostSmallIcon />,
+      large: <DevpostIcon />
     }
   },
 ]
