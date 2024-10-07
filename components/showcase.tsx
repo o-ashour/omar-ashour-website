@@ -16,17 +16,17 @@ export default function Showcase() {
           </a>
         </div>
       </div>
-      <ul className="space-y-6 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-5 md:gap-y-16 xl:hidden">
+      <ul className="space-y-12 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-5 md:gap-y-16 xl:hidden">
         {Projects.map(project => {
           return (
-            <ProjectItem key={project.id} imgData={project.images.small} title={project.title} skills={project.skills} urls={project.urls} />
+            <ProjectItem key={project.id} imgData={project.images.small} title={project.title} skills={project.skills} urls={project.urls} contributions={project.contributions} />
           )
         })}
       </ul>
       <ul className="hidden xl:grid grid-cols-2 gap-x-8 gap-y-12">
         {Projects.map(project => {
           return (
-            <ProjectItem key={project.id} imgData={project.images.large} title={project.title} skills={project.skills} urls={project.urls} />
+            <ProjectItem key={project.id} imgData={project.images.large} title={project.title} skills={project.skills} urls={project.urls} contributions={project.contributions} />
           )
         })}
       </ul>

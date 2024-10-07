@@ -50,6 +50,7 @@ type Projects = {
     repo?: string,
     productionSite?: string,
   },
+  contributions?: string[],
 }[]
 
 type NavItems = {
@@ -84,7 +85,8 @@ export const Projects: Projects = [
     },
     urls: {
       productionSite: 'https://www.tiptopjar.com',
-    }
+    },
+    contributions: ['admin panel', 'blog', 'maintenance']
   },
   { 
     id: 1,
@@ -123,7 +125,8 @@ export const Projects: Projects = [
     urls: {
       repo: 'https://github.com/o-ashour/migrant-mingle',
       productionSite: 'https://migrant-mingle.vercel.app/',
-    }
+    },
+    contributions: ['backend', 'auth'],
   },
   { 
     id: 4,
@@ -135,7 +138,8 @@ export const Projects: Projects = [
     },
     urls: {
       productionSite: 'https://www.ashrafashour.com/',
-    }
+    },
+    contributions: ['wordpress to static site migration'],
   },
   { 
     id: 5,
@@ -147,7 +151,8 @@ export const Projects: Projects = [
     },
     urls: {
       productionSite: 'https://www.digitalhumani.com/',
-    }
+    },
+    contributions: ['timed newsletter signup'],
   },
 ] 
 

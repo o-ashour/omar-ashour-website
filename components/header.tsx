@@ -8,7 +8,7 @@ import circlePattern from '../public/assets/images/pattern-circle.svg';
 export default function Header() {
   return (
     <header className="flex flex-col md:flex-row md:justify-between items-center space-y-5 relative z-50">
-      <h1 className='text-2xl md:text-3xl mt-5 font-bold'>adamkeyes</h1>
+      <h1 className='text-2xl md:text-3xl mt-5 font-bold'>omar@shour</h1>
       <NavMenu />
       <div className="relative z-50 md:hidden">
         <NavMenuSmall />

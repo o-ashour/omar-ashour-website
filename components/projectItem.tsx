@@ -3,7 +3,7 @@ import Image from "next/image";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
 
-export const ProjectItem: React.FC<{ imgData: StaticImageData, title: string, skills: string[], urls?: { repo?: string, productionSite?: string} }> = ({ imgData, title, skills, urls }) => {
+export const ProjectItem: React.FC<{ imgData: StaticImageData, title: string, skills: string[], urls?: { repo?: string, productionSite?: string}, contributions?: string[] }> = ({ imgData, title, skills, urls, contributions }) => {
   return (
     <li className="relative"> {/* this needs to be relative? */}
       <div className="relative">
@@ -35,6 +35,13 @@ export const ProjectItem: React.FC<{ imgData: StaticImageData, title: string, sk
       <ul className="flex space-x-3.5 mt-1.5 mb-4">
         {skills.map((skill, idx) => <li key={idx}>{skill.toUpperCase()}</li>)}
       </ul>
+
+      {contributions && 
+        <ul className="list-disc flex ml-4 mb-4 space-x-8">
+          {contributions?.map((contribution, idx) => <li key={idx}>{contribution}</li>)}
+        </ul>
+      }
+
       {urls?.productionSite && 
         <Link href={urls.productionSite} target='_blank'>
           <button className="font-bold mr-6 pb-1.5 tracking-widest border-b-2 border-green xl:hidden hover:text-green">
