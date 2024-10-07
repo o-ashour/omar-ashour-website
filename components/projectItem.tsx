@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const ProjectItem: React.FC<{ imgData: StaticImageData, title: string, skills: string[], urls?: { repo?: string, productionSite?: string}, contributions?: string[] }> = ({ imgData, title, skills, urls, contributions }) => {
   return (
-    <li className="relative"> {/* this needs to be relative? */}
+    <li>
       <div className="relative">
         {(urls?.productionSite || urls?.repo) &&
           <div id='overlay' className="hidden absolute opacity-0 hover:opacity-100 hover:bg-black/80 w-full h-full hover:cursor-pointer flex items-center justify-center xl:flex">

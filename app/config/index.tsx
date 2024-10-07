@@ -1,16 +1,4 @@
 import { StaticImageData } from "next/image"
-// import designPortfolioThumbnailSmall from '../../public/assets/images/thumbnail-project-1-small.webp';
-// import designPortfolioThumbnailLarge from '../../public/assets/images/thumbnail-project-1-large.webp';
-// import eLearningLandingThumbnailSmall from '../../public/assets/images/thumbnail-project-2-small.webp';
-// import eLearningLandingThumbnailLarge from '../../public/assets/images/thumbnail-project-2-large.webp';
-// import todoAppThumbnailSmall from '../../public/assets/images/thumbnail-project-3-small.webp';
-// import todoAppThumbnailLarge from '../../public/assets/images/thumbnail-project-3-large.webp';
-// import entertainmentWebAppThumbnailSmall from '../../public/assets/images/thumbnail-project-4-small.webp';
-// import entertainmentWebAppThumbnailLarge from '../../public/assets/images/thumbnail-project-4-large.webp';
-// import memoryGameThumbnailSmall from '../../public/assets/images/thumbnail-project-5-small.webp';
-// import memoryGameThumbnailLarge from '../../public/assets/images/thumbnail-project-5-large.webp';
-// import artGalleryShowcaseThumbnailSmall from '../../public/assets/images/thumbnail-project-6-small.webp';
-// import artGalleryShowcaseThumbnailLarge from '../../public/assets/images/thumbnail-project-6-large.webp';
 import microPaymentsBlogThumbnailSmall from '../../public/assets/images/thumbnail-ttj-small.png';
 import microPaymentsBlogThumbnailLarge from '../../public/assets/images/thumbnail-ttj-large.png';
 import linksharingAppThumbnailSmall from '../../public/assets/images/thumbnail-link-sharing-app-small.jpg';
@@ -23,10 +11,6 @@ import personalBlogThumbnailSmall from '../../public/assets/images/thumbnail-per
 import personalBlogThumbnailLarge from '../../public/assets/images/thumbnail-personal-blog-page-large.png';
 import marketingSiteThumbnailSmall from '../../public/assets/images/thumbnail-marketing-site-small.png';
 import marketingSiteThumbnailLarge from '../../public/assets/images/thumbnail-marketing-site-large.png';
-// import TwitterSmallIcon from "@/components/icons/twitterSmallIcon";
-// import TwitterIcon from "@/components/icons/twitterIcon";
-// import FrontendMentorSmallIcon from "@/components/icons/frontendMentorSmallIcon";
-// import FrontendMentorIcon from "@/components/icons/frontendMentorIcon";
 import LinkedInSmallIcon from "@/components/icons/linkedInSmallIcon";
 import LinkedInIcon from "@/components/icons/linkedInIcon";
 import GitHubSmallIcon from "@/components/icons/gitHubSmallIcon";
@@ -128,7 +112,7 @@ export const Projects: Projects = [
       repo: 'https://github.com/o-ashour/migrant-mingle',
       productionSite: 'https://migrant-mingle.vercel.app/',
     },
-    contributions: ['backend', 'auth'],
+    contributions: ['backend'],
   },
   { 
     id: 4,
