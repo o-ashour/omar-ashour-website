@@ -13,7 +13,7 @@ import marketingSiteThumbnailSmall from '../../public/assets/images/thumbnail-ma
 import marketingSiteThumbnailLarge from '../../public/assets/images/thumbnail-marketing-site-large.png';
 import LinkedInSmallIcon from "@/components/icons/linkedInSmallIcon";
 import LinkedInIcon from "@/components/icons/linkedInIcon";
-// import GitHubIcon from "@/components/icons/gitHubIcon";
+import GitHubIcon from "@/components/icons/gitHubIcon";
 import DevpostSmallIcon from "@/components/icons/devpostSmallIcon";
 import DevpostIcon from "@/components/icons/devpostIcon";
 import GitHubSmallIcon from "@/components/icons/gitHubSmIcon";
@@ -148,8 +148,8 @@ export const NavItems = [
     name: 'GitHub',
     url: 'https://github.com/o-ashour',
     icons: {
-      small: <GitHubSmallIcon />
-      // large: <GitHubIcon />
+      small: <GitHubSmallIcon />,
+      large: <GitHubIcon />
     }
   },
   {
