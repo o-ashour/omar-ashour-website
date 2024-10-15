@@ -4,7 +4,7 @@ import circlePattern from '../public/assets/images/pattern-circle.svg';
 export default function Hero() {
   return (
     <section className="text-center relative md:mt-16 md:text-left md:max-w-md xl:max-w-3xl xl:mt-32 xl:relative">
-      <Image className='absolute hidden xl:block top-80 right-0' src={circlePattern} alt='circle pattern' />
+      <Image className='absolute hidden md:block md:-right-[360px] md:top-[340px] lg:top-96 lg:-right-44 xl:top-80 xl:right-0' src={circlePattern} alt='circle pattern' />
       <blockquote className="text-4xl md:text-7xl font-bold md:leading-[5rem] xl:text-[88px]">
         Nice to meet you! I&apos;m <span className="border-b-4 border-green">Omar Ashour</span>.
       </blockquote>

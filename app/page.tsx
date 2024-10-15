@@ -1,6 +1,5 @@
 import profileImgTablet from '../public/assets/images/image-profile-tablet.webp';
 import profileImgDesktop from '../public/assets/images/image-profile-desktop.webp';
-import circlePattern from '../public/assets/images/pattern-circle.svg';
 import ringsPattern from '../public/assets/images/pattern-rings.svg';
 import Image from "next/image";
 import Header from '@/components/header';
@@ -13,14 +12,13 @@ import { ToastContainer } from 'react-toastify';
 
 export default function Home() {
   return (
-    <div className="text-white">
+    <div className="text-white overflow-x-hidden">
       <div className="px-4 md:px-6 md:py-2">
         <div className="max-w-6xl xl:relative xl:mx-auto">
           <Header />
           <Image src={profileImgTablet} alt='profile image' width={322} className='hidden md:block lg:hidden absolute right-0 top-0' />
           <Image src={profileImgDesktop} alt='profile image' width={445} className='hidden lg:block absolute right-0 top-0' />
           <Image className='absolute -left-64 top-20 hidden md:block' src={ringsPattern} alt='rings pattern' />
-          <Image className='absolute -right-16 bottom-60 hidden md:block xl:hidden' src={circlePattern} alt='circle pattern' />
           <Hero />
           <hr className="mt-16 hidden md:block" />
           <Experience />
