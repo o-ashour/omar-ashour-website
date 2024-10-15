@@ -13,10 +13,10 @@ import marketingSiteThumbnailSmall from '../../public/assets/images/thumbnail-ma
 import marketingSiteThumbnailLarge from '../../public/assets/images/thumbnail-marketing-site-large.png';
 import LinkedInSmallIcon from "@/components/icons/linkedInSmallIcon";
 import LinkedInIcon from "@/components/icons/linkedInIcon";
-// import GitHubSmallIcon from "@/components/icons/gitHubSmallIcon";
 // import GitHubIcon from "@/components/icons/gitHubIcon";
 import DevpostSmallIcon from "@/components/icons/devpostSmallIcon";
 import DevpostIcon from "@/components/icons/devpostIcon";
+import GitHubSmallIcon from "@/components/icons/gitHubSmIcon";
 
 type Skills = {
   id: number,
@@ -143,15 +143,15 @@ export const Projects: Projects = [
 ] 
 
 export const NavItems = [
-  // {
-  //   idx: 0,
-  //   name: 'GitHub',
-  //   url: 'https://github.com/o-ashour',
-  //   icons: {
-  //     small: <GitHubSmallIcon />,
-  //     large: <GitHubIcon />
-  //   }
-  // },
+  {
+    idx: 0,
+    name: 'GitHub',
+    url: 'https://github.com/o-ashour',
+    icons: {
+      small: <GitHubSmallIcon />
+      // large: <GitHubIcon />
+    }
+  },
   {
     idx: 1,
     name: 'LinkedIn',
