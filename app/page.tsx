@@ -1,4 +1,5 @@
-import profileImgTablet from '../public/assets/images/image-profile-tablet.webp';
+// import profileImgTablet from '../public/assets/images/image-profile-tablet.webp';
+import profileImgTablet from '../public/assets/images/image-profile-tablet.png';
 import profileImgDesktop from '../public/assets/images/image-profile-desktop.webp';
 import ringsPattern from '../public/assets/images/pattern-rings.svg';
 import Image from "next/image";
