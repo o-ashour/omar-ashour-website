@@ -1,7 +1,6 @@
 import NavMenu from "./navMenu"
 import NavMenuSmall from "./navMenuSmall"
 import Image from "next/image"
-// import profileImgMobile from '../public/assets/images/image-profile-mobile.webp';
 import profileImgMobile from '../public/assets/images/image-profile-mobile.png';
 import ringsPattern from '../public/assets/images/pattern-rings.svg';
 import circlePattern from '../public/assets/images/pattern-circle.svg';
