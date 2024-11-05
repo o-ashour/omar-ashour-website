@@ -50,7 +50,7 @@ export default function Form() {
     <form action={formAction} className="flex flex-col mt-12 xl:flex-1 xl:mt-0" id='contact-form'>
       <Loader />
       <div className="flex flex-col items-end mb-7 space-y-1 relative">
-        <input className={`w-full  bg-transparent border-b border-grey-100 pl-4 pb-3 xl:pb-4 focus:outline-none focus:border-green uppercase ${state.errors?.name && state.errors?.name.length > 0 && 'border-red'}`} type="text" placeholder="NAME" name='name' required />
+        <input className={`w-full  bg-transparent border-b border-grey-100 pl-4 pb-3 xl:pb-4 focus:outline-none focus:border-green uppercase ${state.errors?.name && state.errors?.name.length > 0 && 'border-red'}`} type="text" placeholder="NAME" name='name' required autoComplete="off" />
         {state.errors?.name && state.errors?.name.length > 0 &&
           <>
             <Image className='absolute -top-1' src={errorIcon} alt='error icon' />
@@ -60,7 +60,7 @@ export default function Form() {
       </div>
 
       <div className="flex flex-col items-end mb-7 space-y-1 relative">
-        <input className={`w-full bg-transparent border-b border-grey-100 pl-4 pb-4 focus:outline-none focus:border-green uppercase ${state.errors?.email && state.errors.email.length > 0 && 'border-red'}`} type="email" name="email" id="" placeholder="EMAIL" required/>
+        <input className={`w-full bg-transparent border-b border-grey-100 pl-4 pb-4 focus:outline-none focus:border-green uppercase ${state.errors?.email && state.errors.email.length > 0 && 'border-red'}`} type="email" name="email" id="" placeholder="EMAIL" required autoComplete="off" />
         {state.errors?.email && state.errors?.email.length > 0 &&
           <>
             <Image className='absolute -top-1' src={errorIcon} alt='error icon' />
