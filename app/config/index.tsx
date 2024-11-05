@@ -97,7 +97,6 @@ export const Projects: Projects = [
     },
     urls: {
       repo: 'https://github.com/o-ashour/cat-wiki',
-      productionSite: 'https://cat-wiki-yqvb.onrender.com/',
     }
   },
   { 
