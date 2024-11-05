@@ -17,7 +17,7 @@ const initialState = {
 function SubmitButton() {
   const { pending } = useFormStatus();
 
-  return(
+  return (
     <button type="submit" className="w-fit ml-auto border-b-2 border-green mt-7 pb-2 md:tracking-widest xl:mt-8 hover:text-green" disabled={pending}>
       SEND MESSAGE
     </button>

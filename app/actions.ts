@@ -62,12 +62,12 @@ export const saveForm = async (prevState: FormState, formData: FormData) => {
       status: 'error',
     }
   }
-    
+
   try {
     await saveToAirtable(validatedFields.data);
     return { msg: 'Request submitted successfully', status: 'success' };
   } catch (error) {
     console.error(error);
-    return { msg: 'Something went wrong', status: 'error'}
+    return { msg: 'Something went wrong', status: 'error' }
   }
 }

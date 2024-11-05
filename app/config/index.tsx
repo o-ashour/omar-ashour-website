@@ -61,7 +61,7 @@ export const Skills: Skills = [
 ]
 
 export const Projects: Projects = [
-  { 
+  {
     id: 0,
     title: 'Micropayments Web App',
     skills: ['next', 'chakraUI', 'firebase'],
@@ -74,7 +74,7 @@ export const Projects: Projects = [
     },
     contributions: ['admin panel', 'blog', 'maintenance']
   },
-  { 
+  {
     id: 1,
     title: 'Link Sharing App',
     skills: ['next', 'tailwind', 'postgreSQL'],
@@ -87,7 +87,7 @@ export const Projects: Projects = [
       productionSite: 'https://link-sharing-app-eight-black.vercel.app/',
     }
   },
-  { 
+  {
     id: 2,
     title: 'Cat Wiki',
     skills: ['react', 'express', 'mongodb', 'nodejs'],
@@ -99,7 +99,7 @@ export const Projects: Projects = [
       repo: 'https://github.com/o-ashour/cat-wiki',
     }
   },
-  { 
+  {
     id: 3,
     title: 'Social Networking App (Hackathon Entry)',
     skills: ['next', 'tailwind', 'firebase'],
@@ -113,7 +113,7 @@ export const Projects: Projects = [
     },
     contributions: ['backend'],
   },
-  { 
+  {
     id: 4,
     title: 'Personal Blog Page',
     skills: ['html', 'php', 'wordpress'],
@@ -126,7 +126,7 @@ export const Projects: Projects = [
     },
     contributions: ['wordpress to static site migration'],
   },
-  { 
+  {
     id: 5,
     title: 'Marketing Site for Reforestation API',
     skills: ['html', 'css', 'javascript'],
@@ -139,7 +139,7 @@ export const Projects: Projects = [
     },
     contributions: ['timed newsletter signup'],
   },
-] 
+]
 
 export const NavItems = [
   {
