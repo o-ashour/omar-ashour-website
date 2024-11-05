@@ -56,15 +56,16 @@ export const Skills: Skills = [
   { id: 3, name: 'TailwindCSS', experienceInYears: 2 },
   { id: 4, name: 'ChakraUI', experienceInYears: 2 },
   { id: 5, name: 'React', experienceInYears: 2 },
-  { id: 6, name: 'Next', experienceInYears: 2 },
-  { id: 7, name: 'Firebase', experienceInYears: 2 },
+  { id: 6, name: 'Typescript', experienceInYears: 2 },
+  { id: 7, name: 'Next', experienceInYears: 2 },
+  { id: 8, name: 'Firebase', experienceInYears: 2 },
 ]
 
 export const Projects: Projects = [
   {
     id: 0,
     title: 'Micropayments Web App',
-    skills: ['next', 'chakraUI', 'firebase'],
+    skills: ['next', 'chakraUI', 'typescript', 'firebase'],
     images: {
       small: microPaymentsBlogThumbnailSmall,
       large: microPaymentsBlogThumbnailLarge,
@@ -77,7 +78,7 @@ export const Projects: Projects = [
   {
     id: 1,
     title: 'Link Sharing App',
-    skills: ['next', 'tailwind', 'postgreSQL'],
+    skills: ['next', 'tailwind', 'typescript', 'postgreSQL'],
     images: {
       small: linksharingAppThumbnailSmall,
       large: linksharingAppThumbnailLarge,
