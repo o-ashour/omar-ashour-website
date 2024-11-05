@@ -18,8 +18,8 @@ export default function Home() {
       <div className="px-4 md:px-6 md:py-2">
         <div className="max-w-6xl xl:relative xl:mx-auto">
           <Header />
-          <Image src={profileImgTablet} alt='profile image' width={322} className='hidden md:block lg:hidden absolute right-0 top-0' />
-          <Image src={profileImgDesktop} alt='profile image' width={445} className='hidden lg:block absolute right-0 top-0' />
+          <Image src={profileImgTablet} alt='profile image' width={322} className='hidden md:block lg:hidden absolute right-0 top-0' priority />
+          <Image src={profileImgDesktop} alt='profile image' width={445} className='hidden lg:block absolute right-0 top-0' priority />
           <Image className='absolute -left-64 top-20 hidden md:block' src={ringsPattern} alt='rings pattern' />
           <Hero />
           <hr className="mt-16 hidden md:block" />

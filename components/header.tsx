@@ -14,7 +14,7 @@ export default function Header() {
       <div className="relative z-50 md:hidden">
         <NavMenuSmall />
       </div>
-      <Image src={profileImgMobile} alt='profile image' width={174} className='absolute top-0 z-40 md:hidden' />
+      <Image src={profileImgMobile} alt='profile image' width={174} className='absolute top-0 z-40 md:hidden' priority />
       <Image className='absolute right-52 top-36 md:hidden' src={ringsPattern} alt='rings pattern' />
       <Image className='absolute left-72 top-64 md:hidden' src={circlePattern} alt='circle pattern' />
       <div id='spacer' className="h-80 md:hidden"></div>
