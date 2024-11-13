@@ -7,11 +7,16 @@ const spaceGrotesk = localFont({
   display: 'swap',
 });
 
-// change me
 export const metadata: Metadata = {
-  title: "Omar Ashour | Frontend Developer",
-  description: "Portfolio of Omar Ashour, frontend web developer based in Halifax, Nova Scotia",
+  title: "Omar Ashour | Frontend & Full-Stack Developer",
+  description: "Explore the portfolio of Omar Ashour, a frontend and full-stack developer based in Halifax, Nova Scotia with expertise in modern web development technologies and a passion for crafting interactive, high-performance web applications.",
+  keywords: [
+    'Next.js', 'React', 'JavaScript', 'TypeScript', 'Full-Stack Developer', 'Frontend Developer', 'Backend Developer', 'Firebase', 'PostgreSQL', 'MongoDB',
+    'GraphQL', 'SQL', 'NoSQL', 'REST API', 'API Development', 'Chakra UI', 'SCSS', 'CSS3', 'HTML5', 'Software Engineer', 'Freelancer', 'Web Development',
+    'Responsive Design', 'UX/UI Design', 'Coding', 'Software Development'
+  ],
 };
+
 
 export default function RootLayout({
   children,
