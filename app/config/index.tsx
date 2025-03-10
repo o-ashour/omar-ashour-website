@@ -50,22 +50,22 @@ type NavItems = {
 }
 
 export const Skills: Skills = [
-  { id: 0, name: 'HTML', experienceInYears: 3 },
-  { id: 1, name: 'CSS', experienceInYears: 3 },
-  { id: 2, name: 'Javascript', experienceInYears: 2 },
-  { id: 3, name: 'TailwindCSS', experienceInYears: 2 },
-  { id: 4, name: 'ChakraUI', experienceInYears: 2 },
-  { id: 5, name: 'React', experienceInYears: 2 },
-  { id: 6, name: 'Typescript', experienceInYears: 2 },
-  { id: 7, name: 'Next', experienceInYears: 2 },
-  { id: 8, name: 'Firebase', experienceInYears: 2 },
+  { id: 0, name: 'Next.js', experienceInYears: 2 },
+  { id: 1, name: 'React', experienceInYears: 2 },
+  { id: 2, name: 'Firebase', experienceInYears: 2 },
+  { id: 3, name: 'TypeScript', experienceInYears: 2 },
+  { id: 4, name: 'TailwindCSS', experienceInYears: 2 },
+  { id: 5, name: 'ChakraUI', experienceInYears: 2 },
+  { id: 6, name: 'HTML', experienceInYears: 3 },
+  { id: 7, name: 'CSS', experienceInYears: 3 },
+  { id: 8, name: 'Javascript', experienceInYears: 2 },
 ]
 
 export const Projects: Projects = [
   {
     id: 0,
-    title: 'Micropayments Web App',
-    skills: ['next', 'chakraUI', 'typescript', 'firebase'],
+    title: 'Tip Top Jar: Micropayments App',
+    skills: ['next.js', 'chakraUI', 'typescript', 'firebase'],
     images: {
       small: microPaymentsBlogThumbnailSmall,
       large: microPaymentsBlogThumbnailLarge,
@@ -73,12 +73,12 @@ export const Projects: Projects = [
     urls: {
       productionSite: 'https://www.tiptopjar.com',
     },
-    contributions: ['admin panel', 'blog', 'maintenance']
+    contributions: ['admin panel', 'blog', 'backend']
   },
   {
     id: 1,
-    title: 'Link Sharing App',
-    skills: ['next', 'tailwind', 'typescript', 'postgreSQL'],
+    title: 'DevLinks: Link Sharing App',
+    skills: ['next.js', 'tailwind', 'typescript', 'postgreSQL'],
     images: {
       small: linksharingAppThumbnailSmall,
       large: linksharingAppThumbnailLarge,
@@ -86,24 +86,26 @@ export const Projects: Projects = [
     urls: {
       repo: 'https://github.com/o-ashour/link-sharing-app',
       productionSite: 'https://link-sharing-app-eight-black.vercel.app/',
-    }
+    },
+    contributions: ['full development'],
   },
   {
     id: 2,
     title: 'Cat Wiki',
-    skills: ['react', 'express', 'mongodb', 'nodejs'],
+    skills: ['react', 'express.js', 'mongodb', 'node.js'],
     images: {
       small: catWikiThumbnailSmall,
       large: catWikiThumbnailLarge,
     },
     urls: {
       repo: 'https://github.com/o-ashour/cat-wiki',
-    }
+    },
+    contributions: ['full development'],
   },
   {
     id: 3,
-    title: 'Social Networking App (Hackathon Entry)',
-    skills: ['next', 'tailwind', 'firebase'],
+    title: 'Migrant Mingle: Social Network / Hackathon Entry',
+    skills: ['next.js', 'tailwind', 'firebase'],
     images: {
       small: socialAppThumbnailSmall,
       large: socialAppThumbnailLarge,
@@ -116,7 +118,7 @@ export const Projects: Projects = [
   },
   {
     id: 4,
-    title: 'Personal Blog Page',
+    title: 'Ashraf Ashour Blog',
     skills: ['html', 'php', 'wordpress'],
     images: {
       small: personalBlogThumbnailSmall,
@@ -129,7 +131,7 @@ export const Projects: Projects = [
   },
   {
     id: 5,
-    title: 'Marketing Site for Reforestation API',
+    title: 'Digital Humani: Marketing Site for Reforestation API',
     skills: ['html', 'css', 'javascript'],
     images: {
       small: marketingSiteThumbnailSmall,
