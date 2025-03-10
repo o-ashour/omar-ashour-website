@@ -31,8 +31,8 @@ export const ProjectItem: React.FC<{ imgData: StaticImageData, title: string, sk
       <p className="text-2xl font-bold mt-5">
         {title.toUpperCase()}
       </p>
-      <ul className="flex space-x-3.5 mt-1.5 mb-4">
-        {skills.map((skill, idx) => <li key={idx}>{skill.toUpperCase()}</li>)}
+      <ul className="mt-1.5 mb-4">
+        {skills.map((skill, idx) => <li className='inline-block mr-3.5' key={idx}>{skill.toUpperCase()}</li>)}
       </ul>
 
       {contributions &&
