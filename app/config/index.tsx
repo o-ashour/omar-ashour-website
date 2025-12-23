@@ -49,16 +49,16 @@ type NavItems = {
   }
 }
 
+const date = new Date();
+const year = date.getFullYear();
+
 export const Skills: Skills = [
-  { id: 0, name: 'Next.js', experienceInYears: 2 },
-  { id: 1, name: 'React', experienceInYears: 2 },
-  { id: 2, name: 'Firebase', experienceInYears: 2 },
-  { id: 3, name: 'TypeScript', experienceInYears: 2 },
-  { id: 4, name: 'TailwindCSS', experienceInYears: 2 },
-  { id: 5, name: 'ChakraUI', experienceInYears: 2 },
-  { id: 6, name: 'HTML', experienceInYears: 3 },
-  { id: 7, name: 'CSS', experienceInYears: 3 },
-  { id: 8, name: 'Javascript', experienceInYears: 2 },
+  { id: 0, name: 'TypeScript', experienceInYears: year - 2022 },
+  { id: 1, name: 'React', experienceInYears: year - 2022 },
+  { id: 2, name: 'Node.js', experienceInYears: year - 2022 },
+  { id: 3, name: 'Firebase', experienceInYears: year - 2022 },
+  { id: 4, name: 'Next.js', experienceInYears: year - 2022 },
+  { id: 5, name: 'CSS', experienceInYears: year - 2021 },
 ]
 
 export const Projects: Projects = [
