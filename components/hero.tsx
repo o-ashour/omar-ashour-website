@@ -9,7 +9,7 @@ export default function Hero() {
         Nice to meet you! I&apos;m <span className="border-b-4 border-green">Omar Ashour</span>.
       </blockquote>
       <p className="mt-8 xl:text-balance xl:mt-16">
-        Based in Halifax, I&apos;m a highly skilled full-stack developer focused on building powerful web apps for startups. By prioritizing user needs and app security, I can help you drive substantial growth consistently. Let&apos;s work together!
+        Based in Edmonton, I&apos;m a highly skilled full-stack developer focused on building powerful web apps for startups. By prioritizing user needs and app security, I can help you drive substantial growth consistently. Let&apos;s work together!
       </p>
       <a href='#contact-section'>
         <button className="mt-7 font-bold tracking-widest border-b-2 border-green pb-2 xl:mt-20 hover:text-green">
