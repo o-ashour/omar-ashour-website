@@ -2,11 +2,11 @@ import Image from "next/image";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
 
-export const ProjectItem: React.FC<{ imgData: StaticImageData, title: string, skills: string[], urls?: { repo?: string, productionSite?: string }, contributions?: string[] }> = ({ imgData, title, skills, urls, contributions }) => {
+export const ProjectItem: React.FC<{ imgData: StaticImageData, title: string, skills: string[], urls?: { repo?: string, productionSite?: string, clientRepo?: string, serverRepo?: string }, contributions?: string[] }> = ({ imgData, title, skills, urls, contributions }) => {
   return (
     <li>
       <div className="relative">
-        {(urls?.productionSite || urls?.repo) &&
+        {(urls?.productionSite || urls?.repo || urls?.clientRepo || urls?.serverRepo) &&
           <div id='overlay' className="hidden absolute opacity-0 hover:opacity-100 hover:bg-black/80 w-full h-full hover:cursor-pointer flex items-center justify-center xl:flex">
             <div className="flex flex-col space-y-10 items-center">
               {urls?.productionSite &&
@@ -20,6 +20,20 @@ export const ProjectItem: React.FC<{ imgData: StaticImageData, title: string, sk
                 <Link href={urls.repo} target='_blank'>
                   <button className="w-fit font-bold pb-2 tracking-widest border-b-2 border-green hover:text-green">
                     VIEW CODE
+                  </button>
+                </Link>
+              }
+              {urls?.clientRepo &&
+                <Link href={urls.clientRepo} target="_blank">
+                  <button className="font-bold pb-2 tracking-widest border-b-2 border-green hover:text-green">
+                    VIEW CLIENT CODE
+                  </button>
+                </Link>
+              }
+              {urls?.serverRepo &&
+                <Link href={urls.serverRepo} target='_blank'>
+                  <button className="w-fit font-bold pb-2 tracking-widest border-b-2 border-green hover:text-green">
+                    VIEW SERVER CODE
                   </button>
                 </Link>
               }
@@ -52,6 +66,20 @@ export const ProjectItem: React.FC<{ imgData: StaticImageData, title: string, sk
         <Link href={urls.repo} target='_blank'>
           <button className="font-bold pb-1.5 tracking-widest border-b-2 border-green xl:hidden hover:text-green">
             VIEW CODE
+          </button>
+        </Link>
+      }
+      {urls?.clientRepo &&
+        <Link href={urls.clientRepo} target='_blank'>
+          <button className="font-bold mr-6 pb-1.5 tracking-widest border-b-2 border-green xl:hidden hover:text-green">
+            VIEW CLIENT CODE
+          </button>
+        </Link>
+      }
+      {urls?.serverRepo &&
+        <Link href={urls.serverRepo} target='_blank'>
+          <button className="font-bold pb-1.5 tracking-widest border-b-2 border-green xl:hidden hover:text-green">
+            VIEW SERVER CODE
           </button>
         </Link>
       }

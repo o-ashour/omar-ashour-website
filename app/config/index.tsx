@@ -11,11 +11,11 @@ import personalBlogThumbnailSmall from '../../public/assets/images/thumbnail-per
 import personalBlogThumbnailLarge from '../../public/assets/images/thumbnail-personal-blog-page-large.png';
 import marketingSiteThumbnailSmall from '../../public/assets/images/thumbnail-marketing-site-small.png';
 import marketingSiteThumbnailLarge from '../../public/assets/images/thumbnail-marketing-site-large.png';
+import ecommerceSiteThumbnailSmall from '../../public/assets/images/thumbnail-ecommerce-site-small.png';
+import ecommerceSiteThumbnailLarge from '../../public/assets/images/thumbnail-ecommerce-site-large.png';
 import LinkedInSmallIcon from "@/components/icons/linkedInSmallIcon";
 import LinkedInIcon from "@/components/icons/linkedInIcon";
 import GitHubIcon from "@/components/icons/gitHubIcon";
-import DevpostSmallIcon from "@/components/icons/devpostSmallIcon";
-import DevpostIcon from "@/components/icons/devpostIcon";
 import GitHubSmallIcon from "@/components/icons/gitHubSmIcon";
 
 type Skills = {
@@ -35,6 +35,8 @@ type Projects = {
   urls?: {
     repo?: string,
     productionSite?: string,
+    clientRepo?: string,
+    serverRepo?: string,
   },
   contributions?: string[],
 }[]
@@ -56,9 +58,10 @@ export const Skills: Skills = [
   { id: 0, name: 'TypeScript', experienceInYears: year - 2022 },
   { id: 1, name: 'React', experienceInYears: year - 2022 },
   { id: 2, name: 'Node.js', experienceInYears: year - 2022 },
-  { id: 3, name: 'Firebase', experienceInYears: year - 2022 },
-  { id: 4, name: 'Next.js', experienceInYears: year - 2022 },
-  { id: 5, name: 'CSS', experienceInYears: year - 2021 },
+  { id: 3, name: 'SQL', experienceInYears: year - 2024 },
+  { id: 4, name: 'Firebase', experienceInYears: year - 2022 },
+  { id: 5, name: 'Next.js', experienceInYears: year - 2022 },
+  { id: 6, name: 'CSS', experienceInYears: year - 2021 },
 ]
 
 export const Projects: Projects = [
@@ -77,6 +80,20 @@ export const Projects: Projects = [
   },
   {
     id: 1,
+    title: 'O&A: E-commerce App',
+    skills: ['react', 'redux', 'node.js', 'express.js', 'sql'],
+    images: {
+      small: ecommerceSiteThumbnailSmall,
+      large: ecommerceSiteThumbnailLarge,
+    },
+    urls: {
+      clientRepo: 'https://github.com/o-ashour/oa-ecommerce-platform',
+      serverRepo: 'https://github.com/o-ashour/oa-ecommerce-platform-server'
+    },
+    contributions: ['full development']
+  },
+  {
+    id: 2,
     title: 'DevLinks: Link Sharing App',
     skills: ['next.js', 'tailwind', 'typescript', 'postgreSQL'],
     images: {
@@ -90,7 +107,7 @@ export const Projects: Projects = [
     contributions: ['full development'],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Cat Wiki',
     skills: ['react', 'express.js', 'mongodb', 'node.js'],
     images: {
@@ -103,7 +120,7 @@ export const Projects: Projects = [
     contributions: ['full development'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Migrant Mingle: Social Network / Hackathon Entry',
     skills: ['next.js', 'tailwind', 'firebase'],
     images: {
@@ -117,7 +134,7 @@ export const Projects: Projects = [
     contributions: ['backend'],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Ashraf Ashour Blog',
     skills: ['html', 'php', 'wordpress'],
     images: {
@@ -130,7 +147,7 @@ export const Projects: Projects = [
     contributions: ['wordpress to static site migration'],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Digital Humani: Marketing Site for Reforestation API',
     skills: ['html', 'css', 'javascript'],
     images: {
@@ -161,15 +178,6 @@ export const NavItems = [
     icons: {
       small: <LinkedInSmallIcon />,
       large: <LinkedInIcon />
-    }
-  },
-  {
-    idx: 2,
-    name: 'DevPost',
-    url: 'https://devpost.com/shoegaze-86',
-    icons: {
-      small: <DevpostSmallIcon />,
-      large: <DevpostIcon />
     }
   },
 ]
