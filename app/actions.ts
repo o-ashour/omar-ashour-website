@@ -45,12 +45,14 @@ export const saveForm = async (prevState: FormState, formData: FormData) => {
     name: formData.get('name'),
     email: formData.get('email'),
     message: formData.get('message'),
+    address: formData.get('address')
   }
 
   const schema = z.object({
     name: z.string().min(1, { message: 'Cannot be empty' }),
     email: z.string().email().min(1, { message: 'Cannot be empty' }),
     message: z.string().min(1, { message: 'Cannot be empty' }),
+    address: z.string().max(0)
   })
 
   const validatedFields = schema.safeParse(rawFormData)
